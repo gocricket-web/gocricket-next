@@ -8,7 +8,6 @@ import dynamic from "next/dynamic";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
-// Example team logos from /public/images/logo1.png to logo10.png
 const teamLogos = Array.from(
   { length: 8 },
   (_, i) => `/images/country${i + 1}.png`

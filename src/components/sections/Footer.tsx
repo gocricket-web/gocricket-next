@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full z-1">
         {isMobile ? (
           <Image
-            src={"images/footer-eclipse-mobile.svg"}
+            src="/images/footer-eclipse-mobile.svg"
             className="w-full h-full"
             width={100}
             height={100}
@@ -32,7 +32,7 @@ const Footer = () => {
           />
         ) : (
           <Image
-            src={"images/footer-eclipse.svg"}
+            src="/images/footer-eclipse.svg"
             className="w-full h-full"
             width={100}
             height={100}
@@ -78,7 +78,7 @@ const Footer = () => {
           >
             <Image
               className="w-full h-full object-cover"
-              src={"images/instagram.svg"}
+              src="/images/instagram.svg"
               width={50}
               height={50}
               alt="Instagram Icon"
@@ -124,31 +124,30 @@ const Footer = () => {
               © 2025 GOCricket. All rights reserved.
             </p>
 
-            {/* Right: League Logos */}
-            <div className="flex gap-6 mt-4 md:mt-0">
+            <div className="flex gap-4 md:gap-6 mt-4 md:mt-0">
               <Image
                 src="/images/champions-logo.png"
                 alt="Champions Trophy"
-                className="h-6 md:h-8"
+                className="w-auto h-8 md:h-12 xl:h-14"
                 loading="lazy"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
               <Image
                 src="/images/ipl-logo.png"
                 alt="Indian Premier League"
-                className="h-6 md:h-8"
+                className="w-auto h-8 md:h-12 xl:h-14"
                 loading="lazy"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
               <Image
                 src="/images/icc-logo.png"
                 alt="ICC World Cup"
-                className="h-6 md:h-8"
+                className="w-auto h-8 md:h-12 xl:h-14"
                 loading="lazy"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
             </div>
           </div>

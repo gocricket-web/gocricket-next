@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 
-// Lazy loading Client Components (No `ssr: false`)
 const Benefits = dynamic(() => import("@/components/sections/Benefits"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
 const Footer = dynamic(() => import("@/components/sections/Footer"));
