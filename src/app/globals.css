@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Variables */
+:root {
+  --clr-primary-1: hsl(21, 91%, 17%);
+  --clr-primary-5: hsl(21, 62%, 45%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-white: #fff;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --transition: all 0.3s linear;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Global Typography */
+body {
+  @apply bg-mainBackground text-white font-sans antialiased;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: var(--font-inter); /* ✅ Use Next.js font variable */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl font-bold;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-bold;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+/* Links */
+a {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  @apply bg-gray-700;
+}
+
+/* Utility Classes */
+.section {
+  @apply w-[90vw] mx-auto max-w-screen-xl my-20;
+}
+
+.section-center {
+  @apply mx-auto w-4/5 relative flex overflow-hidden;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.slider-container {
+  display: flex !important;
+  justify-content: center;
+}
+
+/* styles.css */
+.team-carousel-card {
+  @apply mx-auto w-[170px] h-[154px] md:w-[200px] md:h-[180px] rounded-3xl bg-gradient-to-b from-[#00001b] to-[#1E1E49] flex items-center justify-center;
+}
+
+.how-to-play-card {
+  @apply bg-[#1E1E4B] rounded-[18px] px-2 md:px-4 pt-8 sm:pt-10 pb-3 w-full h-[154px] md:h-[180px] md:w-full flex flex-col justify-between relative overflow-hidden;
+}
+
+.benefit-card {
+  @apply bg-[#1E1E4B] rounded-[18px] px-2 md:px-4 pt-8 sm:pt-10 pb-3 w-[370px] h-[240px] flex flex-col items-center relative overflow-hidden;
+}
+
+.footer-icon {
+  @apply absolute w-20 h-20 md:w-24 md:h-24 bg-gradient-to-r from-[#6177FE] to-[#121638] rounded-full blur-xl opacity-50;
+}
+
+.social-icon {
+  @apply w-10 h-10 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-105 transition-transform  hover:brightness-110 transition-all duration-200;
+}
+
+.download-button {
+  @apply w-40 md:w-48 lg:w-56 object-contain hover:scale-105 transition-transform duration-300;
+}
+
+.navbar-social-icon {
+  @apply w-8 h-8 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-80;
+}
+
+.hamburger-dropdown {
+  @apply md:hidden bg-black/80 rounded-b-3xl fixed left-1/2 transform -translate-x-1/2 w-[calc(100%-3rem)] max-w-lg py-6 transition-all duration-300 ease-in-out;
+}
+
+.hamburger-button {
+  @apply text-white focus:outline-none transition bg-transparent hover:bg-transparent active:bg-transparent;
+}
