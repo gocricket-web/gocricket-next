@@ -57,6 +57,20 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/desktop-banner.webp"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/mob-homepage-final.webp"
+          type="image/webp"
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
