@@ -2,8 +2,8 @@
 
 import useIsMobile from "@/hooks/useIsMobile";
 import { SHARE_URL } from "@/constants";
-import socials from "@/data/socials-data";
 import Image from "next/image";
+import ShareButtons from "./widgets/Socials";
 
 const Footer = () => {
   const isMobile = useIsMobile();
@@ -60,14 +60,8 @@ const Footer = () => {
         </h2>
 
         {/* Social Share Buttons */}
-        <div className="flex gap-4 mt-10 xl:mt-16 items-center">
-          {socials.map(
-            ({ id, component: ShareComponent, icon: Icon, props }) => (
-              <ShareComponent key={id} {...props}>
-                <Icon className="social-icon" {...props} />
-              </ShareComponent>
-            )
-          )}
+        <div className="flex gap-3 mt-10 xl:mt-16 items-center">
+          <ShareButtons />
 
           {/* Instagram - Copy to Clipboard */}
           <button

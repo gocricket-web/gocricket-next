@@ -55,7 +55,8 @@ const Navbar = () => {
               src="/images/gocricket-dark.svg"
               alt="Go Cricket"
               width={200}
-              height={50}
+              height={200}
+              style={{ height: "auto", width: "auto" }}
             />
           </div>
 

@@ -19,7 +19,9 @@ const Hero: React.FC = () => {
       <Navbar />
 
       <div className="absolute inset-0">
-        <img
+        <Image
+          width={3000}
+          height={3000}
           src={heroImage}
           alt="Hero Background"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}

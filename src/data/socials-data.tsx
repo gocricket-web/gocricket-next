@@ -4,23 +4,21 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
   TwitterShareButton,
-  XIcon,
+  TwitterIcon,
   TelegramShareButton,
   TelegramIcon,
-} from "react-share";
-import { SocialItem } from "../types";
+} from "next-share";
 import { SHARE_URL, SHARE_TITLE } from "../constants";
 
-const socials: SocialItem[] = [
+const socials = [
   {
-    id: "facebook-share",
+    id: "facebook",
     component: FacebookShareButton,
     icon: FacebookIcon,
     props: {
       url: SHARE_URL,
-      size: 40,
-      round: "true",
-      "aria-label": "Share on Facebook",
+      quote: SHARE_TITLE,
+      hashtag: "#GoCricket",
     },
   },
   {
@@ -30,21 +28,16 @@ const socials: SocialItem[] = [
     props: {
       url: SHARE_URL,
       title: SHARE_TITLE,
-      size: 40,
-      round: "true",
-      "aria-label": "Share on WhatsApp",
+      separator: " - ",
     },
   },
   {
     id: "twitter",
     component: TwitterShareButton,
-    icon: XIcon,
+    icon: TwitterIcon,
     props: {
       url: SHARE_URL,
       title: SHARE_TITLE,
-      size: 40,
-      round: "true",
-      "aria-label": "Share on X (Twitter)",
     },
   },
   {
@@ -54,11 +47,7 @@ const socials: SocialItem[] = [
     props: {
       url: SHARE_URL,
       title: SHARE_TITLE,
-      size: 40,
-      round: "true",
-      "aria-label": "Share on Telegram",
     },
   },
 ];
-
 export default socials;
