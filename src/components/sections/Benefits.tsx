@@ -1,10 +1,13 @@
 "use client";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import benefits from "@/data/benefits-data";
 import BenefitCard from "./widgets/BenefitCard";
 import useIsMobile from "@/hooks/useIsMobile";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const Benefits = () => {
   const isMobile = useIsMobile();

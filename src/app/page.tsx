@@ -1,10 +1,15 @@
-import Benefits from "@/components/sections/Benefits";
-import FAQ from "@/components/sections/FAQ";
-import Footer from "@/components/sections/Footer";
+import dynamic from "next/dynamic";
+
+// Lazy loading Client Components (No `ssr: false`)
+const Benefits = dynamic(() => import("@/components/sections/Benefits"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const Footer = dynamic(() => import("@/components/sections/Footer"));
+const HowToPlay = dynamic(() => import("@/components/sections/HowToPlay"));
+const TeamCarousel = dynamic(() => import("@/components/sections/TeamCarousel"));
+const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
+
+// Keeping Hero Static (Above-the-Fold Content)
 import Hero from "@/components/sections/Hero";
-import HowToPlay from "@/components/sections/HowToPlay";
-import TeamCarousel from "@/components/sections/TeamCarousel";
-import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -16,7 +21,6 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Footer />
-      {/* <Footer /> */}
     </main>
   );
 }

@@ -1,9 +1,12 @@
 "use client";
 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 // Example team logos from /public/images/logo1.png to logo10.png
 const teamLogos = Array.from(

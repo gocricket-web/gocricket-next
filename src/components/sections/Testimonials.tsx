@@ -1,9 +1,13 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import reviews from "@/data/customer-review-data";
+import Image from "next/image";
+
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const Testimonials = () => {
   const settings = {
@@ -44,11 +48,13 @@ const Testimonials = () => {
             <div key={review.id} className="px-3">
               <div className="rounded-[19px] bg-gradient-to-b from-[#00001B00] to-[#1E1E49] p-6 h-[230px] flex flex-col">
                 <div className="flex items-center mb-4">
-                  <img
+                  <Image
                     src={review.avatar}
                     alt={review.name}
                     className="w-12 h-12 min-w-[3rem] min-h-[3rem] rounded-full object-cover aspect-square mr-4"
                     loading="lazy"
+                    width={100}
+                    height={100}
                   />
                   <div className="flex flex-col items-start">
                     <h3 className="font-semibold text-white m-0 pl-0.5">

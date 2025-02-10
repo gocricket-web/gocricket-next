@@ -1,4 +1,4 @@
-import { FeatureCardType } from "../../utils/types";
+import { FeatureCardType } from "@/types";
 import { SubtractFigure } from "../icons/SubtractFigure";
 
 const FeatureCard = (props: FeatureCardType) => (

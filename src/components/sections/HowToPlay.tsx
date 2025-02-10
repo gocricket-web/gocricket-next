@@ -19,11 +19,13 @@ const HowToPlay = () => (
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12">
       {/* Left - App Preview */}
       <div className="flex justify-center">
-        <img
+        <Image
           src="/images/smartphone_14_pro.webp"
           alt="App Preview"
           className="w-full max-w-md mx-auto"
           loading="lazy"
+          width={1000}
+          height={1000}
         />
       </div>
 

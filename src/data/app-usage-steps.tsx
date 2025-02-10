@@ -1,7 +1,7 @@
-import { DownloadIcon } from "../../components/icons/DownloadIcon";
-import { PredictIcon } from "../../components/icons/PredictIcon";
-import { QuizesIcon } from "../../components/icons/QuizesIcon";
-import { RewardIcon } from "../../components/icons/RewardIcon";
+import { DownloadIcon } from "@/components/sections/icons/DownloadIcon";
+import { PredictIcon } from "@/components/sections/icons/PredictIcon";
+import { QuizesIcon } from "@/components/sections/icons/QuizesIcon";
+import { RewardIcon } from "@/components/sections/icons/RewardIcon";
 import { AppUsageSteps } from "../types";
 
 const steps: AppUsageSteps[] = [

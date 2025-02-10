@@ -1,15 +1,18 @@
 import { SubtractFigure } from "../icons/SubtractFigure";
 import { BenefitCardType } from "@/types";
+import Image from "next/image";
 
 const BenefitCard = ({ title, icon }: BenefitCardType) => (
   <div className="benefit-card">
     {/* Centered PNG Icon */}
     <div className="w-24 h-24 md:h-16 md:w-16 flex items-center mb-8 md:mb-10">
-      <img
+      <Image
         src={icon}
         alt={title}
         className="w-full h-full object-contain"
         loading="lazy"
+        width={100}
+        height={100}
       />
     </div>
 

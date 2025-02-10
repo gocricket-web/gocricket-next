@@ -46,11 +46,13 @@ const Footer = () => {
         {/* Circle Background Around Icon */}
         <div className="flex items-center justify-center">
           <div className="footer-icon"></div>
-          <img
+          <Image
             src="/images/footer-icon.png"
             alt="Share Icon"
             className="w-32 top-0 relative animate-float"
             loading="lazy"
+            width={100}
+            height={100}
           />
         </div>
 
@@ -124,23 +126,29 @@ const Footer = () => {
 
             {/* Right: League Logos */}
             <div className="flex gap-6 mt-4 md:mt-0">
-              <img
+              <Image
                 src="/images/champions-logo.png"
                 alt="Champions Trophy"
                 className="h-6 md:h-8"
                 loading="lazy"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="/images/ipl-logo.png"
                 alt="Indian Premier League"
                 className="h-6 md:h-8"
                 loading="lazy"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="/images/icc-logo.png"
                 alt="ICC World Cup"
                 className="h-6 md:h-8"
                 loading="lazy"
+                width={100}
+                height={100}
               />
             </div>
           </div>
