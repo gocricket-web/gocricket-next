@@ -2,8 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    formats: ["image/webp"], // ✅ Ensures WebP optimization
+
     remotePatterns: [
-      // TODO: remove this if we go with different testimonial templates
+      {
+        protocol: "https",
+        hostname: "gocricket-next-xu99.vercel.app",
+      },
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
