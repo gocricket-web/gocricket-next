@@ -24,7 +24,6 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
-
 export const metadata: Metadata = {
   title: "GoCricket - Cricket Prediction App",
   description: "Predict cricket matches and win from ₹1 Crore prize pool",
@@ -32,12 +31,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://d1bi55qz9dqbh9.cloudfront.net/",
+    url: "https://gocricket-next.vercel.app/",
     title: "GoCricket - Cricket Prediction App",
     description: "Predict cricket matches and win from ₹1 Crore prize pool",
     images: [
       {
-        url: "https://d1bi55qz9dqbh9.cloudfront.net/fun.png",
+        url: "https://gocricket-next.vercel.app/images/facebook-banner.png",
         width: 1200,
         height: 630,
         alt: "GoCricket Banner",
@@ -50,6 +49,14 @@ export const metadata: Metadata = {
     site: "@GoCricket",
     title: "GoCricket - Cricket Prediction App",
     description: "Predict cricket matches and win from ₹1 Crore prize pool",
+    images: [
+      {
+        url: "https://gocricket-next.vercel.app/images/facebook-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "GoCricket Banner",
+      },
+    ],
   },
 };
 

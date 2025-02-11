@@ -33,12 +33,12 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent to-[#00001b]" />
       </div>
 
-      <div className="absolute top-[25%] md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-52 md:w-80 lg:w-96">
+      <div className="absolute top-[25%] md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-52 md:w-1/4">
       <Image
           src="/images/2025_ICC.svg"
           alt="Champions Trophy 2025"
-          width={500}
-          height={200}
+          width={700}
+          height={300}
           className="w-full object-contain"
           priority
         />

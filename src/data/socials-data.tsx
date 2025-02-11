@@ -19,6 +19,7 @@ const socials = [
       url: SHARE_URL,
       quote: SHARE_TITLE,
       hashtag: "#GoCricket",
+      appId: "1095220939022142",
     },
   },
   {
