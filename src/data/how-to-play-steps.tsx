@@ -1,8 +1,8 @@
-import { PredictIcon } from "@/components/sections/icons/PredictIcon";
-import { QuizesIcon } from "@/components/sections/icons/QuizesIcon";
-import { RewardIcon } from "@/components/sections/icons/RewardIcon";
+import { PredictIcon } from "@/components/icons/PredictIcon";
+import { QuizesIcon } from "@/components/icons/QuizesIcon";
+import { RewardIcon } from "@/components/icons/RewardIcon";
 import { HowToPlayStep } from "../types";
-import { DownloadIcon } from "@/components/sections/icons/DownloadIcon";
+import { DownloadIcon } from "@/components/icons/DownloadIcon";
 const howToPlaySteps: HowToPlayStep[] = [
   {
     icon: <DownloadIcon />,

@@ -3,7 +3,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import benefits from "@/data/benefits-data";
-import BenefitCard from "./widgets/BenefitCard";
+import BenefitCard from "../widgets/BenefitCard";
 import useIsMobile from "@/hooks/useIsMobile";
 import dynamic from "next/dynamic";
 

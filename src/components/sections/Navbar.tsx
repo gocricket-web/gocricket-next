@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import useIsMobile from "@/hooks/useIsMobile";
-import NavbarIcons from "./widgets/NavbarIcons";
-import NavbarLinks from "./widgets/NavbarLinks";
+import NavbarIcons from "../widgets/NavbarIcons";
+import NavbarLinks from "../widgets/NavbarLinks";
 import Image from "next/image";
 
 const Navbar = () => {

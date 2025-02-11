@@ -3,7 +3,7 @@
 import useIsMobile from "@/hooks/useIsMobile";
 import { SHARE_URL } from "@/constants";
 import Image from "next/image";
-import ShareButtons from "./widgets/Socials";
+import ShareButtons from "../widgets/Socials";
 
 const Footer = () => {
   const isMobile = useIsMobile();
